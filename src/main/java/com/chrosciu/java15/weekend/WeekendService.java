@@ -6,6 +6,7 @@ import static com.chrosciu.java15.weekend.Day.SUNDAY;
 
 @Service
 public class WeekendService {
+
     private static final String NO_CHANCE = """
             <div style="border: solid; padding: 2px">
                 <div>Kiedyś na pewno będzie, ale na razie.... :(</div>
