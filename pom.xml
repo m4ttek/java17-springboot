@@ -12,11 +12,7 @@
     <artifactId>java15</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>java15</name>
-    <description>Demo project for Spring Boot</description>
-
-    <properties>
-        <java.version>15</java.version>
-    </properties>
+    <description>Spring Boot Java 15 migration</description>
 
     <dependencies>
         <dependency>
