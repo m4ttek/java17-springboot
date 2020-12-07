@@ -20,11 +20,6 @@ public class ProcessController {
         return processService.getAllAliveProcesses();
     }
 
-    @GetMapping("/current")
-    public ProcessHandle getCurrentProcess() {
-        return processService.getCurrentProcess();
-    }
-
     @PostMapping("/kill")
     public void destroyProcess(@RequestParam("pid") long pid) {
         processService.destroyProcess(pid);

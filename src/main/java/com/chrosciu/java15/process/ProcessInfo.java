@@ -1,16 +1,16 @@
 package com.chrosciu.java15.process;
 
 import lombok.Builder;
-import lombok.Getter;
+import lombok.Value;
 
 import java.time.Instant;
 
-@Getter
+@Value
 @Builder
 public class ProcessInfo {
-    private long pid;
-    private String command;
-    private String commandLine;
-    private Instant startInstant;
-    private String user;
+    long pid;
+    String command;
+    String commandLine;
+    Instant startInstant;
+    String user;
 }
