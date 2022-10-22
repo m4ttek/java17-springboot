@@ -1,4 +1,4 @@
-package com.chrosciu.java15.process;
+package com.chrosciu.java17.process;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -12,10 +12,10 @@ public class ProcessService {
     private final ProcessInfoMapper processInfoMapper;
 
     public List<ProcessInfo> getAllAliveProcesses() {
-        return  ProcessHandle.allProcesses()
+        return ProcessHandle.allProcesses()
                 .filter(ProcessHandle::isAlive)
                 .map(processInfoMapper::toProcessInfo)
-                .collect(Collectors.toList());
+                .toList();
     }
 
     public ProcessHandle getCurrentProcess() {

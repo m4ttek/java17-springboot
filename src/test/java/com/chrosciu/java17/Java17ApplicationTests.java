@@ -1,10 +1,10 @@
-package com.chrosciu.java15;
+package com.chrosciu.java17;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
-class Java15ApplicationTests {
+@SpringBootTest(classes = com.chrosciu.java17.Java17Application.class)
+class Java17ApplicationTests {
 
     @Test
     void contextLoads() {

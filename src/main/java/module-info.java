@@ -1,4 +1,4 @@
-open module com.chrosciu.java15spring {
+open module com.chrosciu.java17spring {
     requires static lombok;
     requires spring.web;
     requires spring.boot;

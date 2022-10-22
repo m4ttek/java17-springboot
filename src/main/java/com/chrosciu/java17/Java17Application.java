@@ -1,13 +1,14 @@
-package com.chrosciu.java15;
+package com.chrosciu.java17;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Java15Application {
+public class Java17Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(Java15Application.class, args);
+        SpringApplication.run(Java17Application.class, args);
     }
 
 }

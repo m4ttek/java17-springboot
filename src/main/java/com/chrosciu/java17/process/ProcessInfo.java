@@ -1,4 +1,4 @@
-package com.chrosciu.java15.process;
+package com.chrosciu.java17.process;
 
 import lombok.Builder;
 import lombok.Value;

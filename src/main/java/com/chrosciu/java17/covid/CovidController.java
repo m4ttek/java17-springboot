@@ -1,4 +1,4 @@
-package com.chrosciu.java15.covid;
+package com.chrosciu.java17.covid;
 
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;

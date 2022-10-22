@@ -1,4 +1,4 @@
-package com.chrosciu.java15.weekend;
+package com.chrosciu.java17.weekend;
 
 public enum Day {
     MONDAY,
