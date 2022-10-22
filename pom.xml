@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.chrosciu</groupId>
-    <artifactId>java15</artifactId>
+    <artifactId>java17</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>java15</name>
-    <description>Spring Boot Java 15 migration</description>
+    <description>Spring Boot Java 17 migration</description>
 
     <dependencies>
         <dependency>

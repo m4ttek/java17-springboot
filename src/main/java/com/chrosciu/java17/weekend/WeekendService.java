@@ -1,8 +1,8 @@
-package com.chrosciu.java15.weekend;
+package com.chrosciu.java17.weekend;
 
 import org.springframework.stereotype.Service;
 
-import static com.chrosciu.java15.weekend.Day.SUNDAY;
+import static com.chrosciu.java17.weekend.Day.SUNDAY;
 
 @Service
 public class WeekendService {
