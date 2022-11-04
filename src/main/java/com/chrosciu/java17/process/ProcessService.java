@@ -3,7 +3,6 @@ package com.chrosciu.java17.process;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import java.util.Collections;
 import java.util.List;
 
 @Service
@@ -11,11 +10,23 @@ import java.util.List;
 public class ProcessService {
 
     public List<ProcessInfo> getAllAliveProcesses() {
-        //TODO : Implement
-        return Collections.emptyList();
+        return ProcessHandle.allProcesses()
+                .filter(ProcessHandle::isAlive)
+                .map(ph -> ProcessInfo
+                        .builder()
+                        .pid(ph.pid())
+                        .user(ph.info().user().orElse("N/A"))
+                        .commandLine(ph.info().commandLine().orElse("N/A"))
+                        .build())
+                .toList();
+    }
+
+    public ProcessHandle getCurrentProcess() {
+        return ProcessHandle.current();
     }
 
     public void destroyProcess(long pid) {
-        //TODO : Implement
+        ProcessHandle.of(pid)
+                .ifPresent(ProcessHandle::destroy);
     }
 }
